@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bob — SRE / Platform Engineer</title>
-  <meta name="description" content="Personal website of Bob, SRE and Platform Engineer.">
+  <title>Bob — DevOps Tech Lead @ Rakuten</title>
+  <meta name="description" content="Bob — DevOps Tech Lead at Rakuten. Platform engineering, Kubernetes, observability, CI/CD.">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -30,8 +30,9 @@
       <h1 class="hero-name">Bob</h1>
       <p class="hero-tagline">I build <span id="typed-text">reliable platforms.</span><span class="cursor"></span></p>
       <p class="hero-bio">
-        SRE &amp; Platform Engineer focused on reliability, scalability, and developer experience.
-        I design the infrastructure and tooling that lets teams ship with confidence.
+        DevOps Tech Lead at Rakuten, Tokyo. I build the platforms and pipelines
+        that keep services running at scale — from zero-downtime cloud migrations
+        to end-to-end observability stacks.
       </p>
       <div class="hero-cta">
         <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -48,32 +49,32 @@
       <div class="about-grid">
         <div class="about-text">
           <p>
-            Hi! I'm Bob, an SRE / Platform Engineer based in Tokyo, Japan.
-            I work at the intersection of infrastructure, reliability engineering,
-            and developer tooling — building the systems that keep production healthy
-            and help developers move fast without breaking things.
+            Hi! I'm Bob, a DevOps Tech Lead at Rakuten, based in Tokyo, Japan.
+            Over the past ~4 years I've grown from intern to tech lead,
+            working on cloud migrations, CI/CD pipelines, and full-stack
+            observability for production services handling 20k+ QPS.
           </p>
           <p>
-            I'm passionate about observability, incident response, CI/CD pipelines,
-            and internal developer platforms. I believe good platform work is invisible
-            to the teams it serves.
+            I'm passionate about making infrastructure invisible to developers —
+            through reliable platforms, automated deployments, and observability
+            that surfaces problems before users notice them.
           </p>
           <p>
-            Currently working at [Company] / Looking for new opportunities.
+            Currently leading a platform engineering transformation at Rakuten.
           </p>
         </div>
         <div class="about-stats">
           <div class="stat-card">
-            <div class="stat-value">X+</div>
-            <div class="stat-label">Years of Experience</div>
+            <div class="stat-value">3+</div>
+            <div class="stat-label">Years at Rakuten</div>
           </div>
           <div class="stat-card">
-            <div class="stat-value">XX</div>
-            <div class="stat-label">Services Maintained</div>
+            <div class="stat-value">20k</div>
+            <div class="stat-label">Peak QPS Handled</div>
           </div>
           <div class="stat-card">
-            <div class="stat-value">99.9%</div>
-            <div class="stat-label">Uptime Target</div>
+            <div class="stat-value">0</div>
+            <div class="stat-label">Downtime on Migration</div>
           </div>
           <div class="stat-card">
             <div class="stat-value">XX</div>
@@ -91,35 +92,33 @@
       <h2 class="section-title">Tech Stack</h2>
       <div class="skills-groups">
         <div>
-          <p class="skill-group-name">// Infrastructure &amp; Cloud</p>
+          <p class="skill-group-name">// Infrastructure &amp; Container</p>
           <div class="skill-tags">
             <span class="tag tag-blue">Kubernetes</span>
-            <span class="tag tag-blue">Terraform</span>
-            <span class="tag tag-blue">AWS</span>
-            <span class="tag tag-blue">GCP</span>
             <span class="tag tag-blue">Docker</span>
             <span class="tag tag-blue">Helm</span>
+            <span class="tag tag-blue">MariaDB</span>
+            <span class="tag tag-blue">Linux</span>
           </div>
         </div>
         <div>
-          <p class="skill-group-name">// Observability &amp; Reliability</p>
+          <p class="skill-group-name">// Observability</p>
           <div class="skill-tags">
             <span class="tag tag-green">Prometheus</span>
             <span class="tag tag-green">Grafana</span>
-            <span class="tag tag-green">OpenTelemetry</span>
-            <span class="tag tag-green">PagerDuty</span>
-            <span class="tag tag-green">Loki</span>
+            <span class="tag tag-green">Elasticsearch</span>
+            <span class="tag tag-green">Fluentd</span>
+            <span class="tag tag-green">Kibana</span>
           </div>
         </div>
         <div>
-          <p class="skill-group-name">// CI/CD &amp; Automation</p>
+          <p class="skill-group-name">// CI/CD &amp; IaC</p>
           <div class="skill-tags">
-            <span class="tag tag-purple">GitHub Actions</span>
-            <span class="tag tag-purple">ArgoCD</span>
             <span class="tag tag-purple">Jenkins</span>
             <span class="tag tag-purple">Ansible</span>
+            <span class="tag tag-purple">GitOps</span>
             <span class="tag tag-purple">Python</span>
-            <span class="tag tag-purple">Go</span>
+            <span class="tag tag-purple">Bash</span>
           </div>
         </div>
       </div>
@@ -141,50 +140,14 @@
               <a href="#" title="Live Demo">Live</a>
             </div>
           </div>
-          <h3 class="project-name">k8s-autoscaler-tuner</h3>
+          <h3 class="project-name">Cloud Migration @ Rakuten</h3>
           <p class="project-desc">
-            A CLI tool for profiling and auto-tuning Kubernetes HPA/VPA parameters
-            based on historical metrics from Prometheus. Reduced over-provisioning by ~30%.
+            Led migration of services to Kubernetes in the cloud with zero downtime,
+            supporting peak QPS of 20,000. Used canary releases and end-to-end
+            Jenkins pipelines across multi-environment deployments.
           </p>
           <div class="project-meta">
-            <span class="project-lang">Go</span>
-            <span>★ 42</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <span class="project-icon">🔥</span>
-            <div class="project-links">
-              <a href="#" title="GitHub">GitHub</a>
-            </div>
-          </div>
-          <h3 class="project-name">incident-runbook-bot</h3>
-          <p class="project-desc">
-            Slack bot that surfaces relevant runbooks and past incident RCAs during
-            active incidents, integrated with PagerDuty alerts.
-          </p>
-          <div class="project-meta">
-            <span class="project-lang">Python</span>
-            <span>★ 18</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <span class="project-icon">🏗️</span>
-            <div class="project-links">
-              <a href="#" title="GitHub">GitHub</a>
-            </div>
-          </div>
-          <h3 class="project-name">terraform-module-registry</h3>
-          <p class="project-desc">
-            Internal Terraform module library standardizing VPC, EKS, and RDS
-            setups across all teams. Enforces security baselines by default.
-          </p>
-          <div class="project-meta">
-            <span class="project-lang">HCL</span>
-            <span>★ 27</span>
+            <span class="project-lang">Kubernetes</span>
           </div>
         </div>
 
@@ -192,18 +155,50 @@
           <div class="project-header">
             <span class="project-icon">📊</span>
             <div class="project-links">
-              <a href="#" title="GitHub">GitHub</a>
-              <a href="#" title="Live Demo">Live</a>
             </div>
           </div>
-          <h3 class="project-name">slo-dashboard</h3>
+          <h3 class="project-name">Full-Stack Observability</h3>
           <p class="project-desc">
-            Grafana dashboard framework for SLO/SLI tracking with error budget
-            burn rate alerts. One-command deploy for any service.
+            Built and administered ELK/EFK clusters for log monitoring and
+            Prometheus + Grafana for metrics. Configured custom alerts to
+            enhance observability and optimize system performance.
           </p>
           <div class="project-meta">
-            <span class="project-lang">Python</span>
-            <span>★ 31</span>
+            <span class="project-lang">Prometheus</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🏗️</span>
+            <div class="project-links">
+            </div>
+          </div>
+          <h3 class="project-name">Multi-Env Infrastructure Design</h3>
+          <p class="project-desc">
+            Designed isolated multi-environment infra using Kubernetes, Docker,
+            Jenkins, Prometheus, EFK, and MariaDB. Managed full lifecycle from
+            planning to production.
+          </p>
+          <div class="project-meta">
+            <span class="project-lang">Ansible</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🚀</span>
+            <div class="project-links">
+            </div>
+          </div>
+          <h3 class="project-name">Platform Engineering Transformation</h3>
+          <p class="project-desc">
+            Currently leading a platform engineering transformation at Rakuten
+            as DevOps Tech Lead — standardizing tooling, improving developer
+            experience, and driving reliability practices org-wide.
+          </p>
+          <div class="project-meta">
+            <span class="project-lang">Platform Eng</span>
           </div>
         </div>
 
@@ -275,7 +270,7 @@
             <span class="contact-link-icon">gh</span>
             GitHub
           </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" class="contact-link">
+          <a href="https://www.linkedin.com/in/zhangzhongqi-bob/" target="_blank" class="contact-link">
             <span class="contact-link-icon">in</span>
             LinkedIn
           </a>
