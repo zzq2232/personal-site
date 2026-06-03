@@ -1,10 +1,10 @@
 // ── Typing animation in hero ──────────────────────────────────────────────
 const phrases = [
-  'things for the web.',
-  'backend services.',
-  'open source tools.',
-  'developer experiences.',
-  'elegant solutions.',
+  'reliable platforms.',
+  'resilient infrastructure.',
+  'better developer experiences.',
+  'observable systems.',
+  'zero-downtime deploys.',
 ]
 
 const el = document.getElementById('typed-text')

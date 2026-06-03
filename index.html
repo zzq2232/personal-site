@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name — Developer</title>
-  <meta name="description" content="Personal website of Your Name, a software developer.">
+  <title>Bob — SRE / Platform Engineer</title>
+  <meta name="description" content="Personal website of Bob, SRE and Platform Engineer.">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -27,11 +27,11 @@
   <section id="hero">
     <div class="hero-content">
       <p class="hero-greeting">// Hello, world!</p>
-      <h1 class="hero-name">Your Name</h1>
-      <p class="hero-tagline">I build <span id="typed-text">things for the web</span><span class="cursor"></span></p>
+      <h1 class="hero-name">Bob</h1>
+      <p class="hero-tagline">I build <span id="typed-text">reliable platforms.</span><span class="cursor"></span></p>
       <p class="hero-bio">
-        A software developer passionate about clean code and great user experiences.
-        I enjoy turning complex problems into simple, beautiful solutions.
+        SRE &amp; Platform Engineer focused on reliability, scalability, and developer experience.
+        I design the infrastructure and tooling that lets teams ship with confidence.
       </p>
       <div class="hero-cta">
         <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -48,13 +48,15 @@
       <div class="about-grid">
         <div class="about-text">
           <p>
-            Hi! I'm Your Name, a software developer based in [City]. I love building
-            things and have been coding for X years. I specialize in [your specialization]
-            and enjoy working on both sides of the stack.
+            Hi! I'm Bob, an SRE / Platform Engineer based in Tokyo, Japan.
+            I work at the intersection of infrastructure, reliability engineering,
+            and developer tooling — building the systems that keep production healthy
+            and help developers move fast without breaking things.
           </p>
           <p>
-            When I'm not in front of a computer screen, I'm usually [your hobbies].
-            I'm always open to new opportunities and interesting conversations.
+            I'm passionate about observability, incident response, CI/CD pipelines,
+            and internal developer platforms. I believe good platform work is invisible
+            to the teams it serves.
           </p>
           <p>
             Currently working at [Company] / Looking for new opportunities.
@@ -67,11 +69,11 @@
           </div>
           <div class="stat-card">
             <div class="stat-value">XX</div>
-            <div class="stat-label">Projects Completed</div>
+            <div class="stat-label">Services Maintained</div>
           </div>
           <div class="stat-card">
-            <div class="stat-value">XX</div>
-            <div class="stat-label">GitHub Stars</div>
+            <div class="stat-value">99.9%</div>
+            <div class="stat-label">Uptime Target</div>
           </div>
           <div class="stat-card">
             <div class="stat-value">XX</div>
@@ -89,33 +91,35 @@
       <h2 class="section-title">Tech Stack</h2>
       <div class="skills-groups">
         <div>
-          <p class="skill-group-name">// Languages</p>
+          <p class="skill-group-name">// Infrastructure &amp; Cloud</p>
           <div class="skill-tags">
-            <span class="tag tag-blue">Python</span>
-            <span class="tag tag-blue">TypeScript</span>
-            <span class="tag tag-blue">Go</span>
-            <span class="tag tag-blue">Rust</span>
-            <span class="tag tag-blue">SQL</span>
+            <span class="tag tag-blue">Kubernetes</span>
+            <span class="tag tag-blue">Terraform</span>
+            <span class="tag tag-blue">AWS</span>
+            <span class="tag tag-blue">GCP</span>
+            <span class="tag tag-blue">Docker</span>
+            <span class="tag tag-blue">Helm</span>
           </div>
         </div>
         <div>
-          <p class="skill-group-name">// Frameworks &amp; Libraries</p>
+          <p class="skill-group-name">// Observability &amp; Reliability</p>
           <div class="skill-tags">
-            <span class="tag tag-green">React</span>
-            <span class="tag tag-green">Next.js</span>
-            <span class="tag tag-green">Node.js</span>
-            <span class="tag tag-green">FastAPI</span>
-            <span class="tag tag-green">Docker</span>
+            <span class="tag tag-green">Prometheus</span>
+            <span class="tag tag-green">Grafana</span>
+            <span class="tag tag-green">OpenTelemetry</span>
+            <span class="tag tag-green">PagerDuty</span>
+            <span class="tag tag-green">Loki</span>
           </div>
         </div>
         <div>
-          <p class="skill-group-name">// Tools &amp; Platforms</p>
+          <p class="skill-group-name">// CI/CD &amp; Automation</p>
           <div class="skill-tags">
-            <span class="tag tag-purple">Git</span>
-            <span class="tag tag-purple">Linux</span>
-            <span class="tag tag-purple">AWS</span>
-            <span class="tag tag-purple">PostgreSQL</span>
-            <span class="tag tag-purple">Redis</span>
+            <span class="tag tag-purple">GitHub Actions</span>
+            <span class="tag tag-purple">ArgoCD</span>
+            <span class="tag tag-purple">Jenkins</span>
+            <span class="tag tag-purple">Ansible</span>
+            <span class="tag tag-purple">Python</span>
+            <span class="tag tag-purple">Go</span>
           </div>
         </div>
       </div>
@@ -137,29 +141,28 @@
               <a href="#" title="Live Demo">Live</a>
             </div>
           </div>
-          <h3 class="project-name">Project Alpha</h3>
+          <h3 class="project-name">k8s-autoscaler-tuner</h3>
           <p class="project-desc">
-            A brief description of what this project does and the problem it solves.
-            Keep it concise but informative.
+            A CLI tool for profiling and auto-tuning Kubernetes HPA/VPA parameters
+            based on historical metrics from Prometheus. Reduced over-provisioning by ~30%.
           </p>
           <div class="project-meta">
-            <span class="project-lang">TypeScript</span>
+            <span class="project-lang">Go</span>
             <span>★ 42</span>
           </div>
         </div>
 
         <div class="project-card">
           <div class="project-header">
-            <span class="project-icon">🚀</span>
+            <span class="project-icon">🔥</span>
             <div class="project-links">
               <a href="#" title="GitHub">GitHub</a>
-              <a href="#" title="Live Demo">Live</a>
             </div>
           </div>
-          <h3 class="project-name">Project Beta</h3>
+          <h3 class="project-name">incident-runbook-bot</h3>
           <p class="project-desc">
-            Another cool project description. Highlight the tech used and the
-            impact or scale of the project.
+            Slack bot that surfaces relevant runbooks and past incident RCAs during
+            active incidents, integrated with PagerDuty alerts.
           </p>
           <div class="project-meta">
             <span class="project-lang">Python</span>
@@ -169,37 +172,37 @@
 
         <div class="project-card">
           <div class="project-header">
-            <span class="project-icon">🔧</span>
+            <span class="project-icon">🏗️</span>
             <div class="project-links">
               <a href="#" title="GitHub">GitHub</a>
             </div>
           </div>
-          <h3 class="project-name">Project Gamma</h3>
+          <h3 class="project-name">terraform-module-registry</h3>
           <p class="project-desc">
-            A CLI tool / library / open source contribution that does something
-            useful for developers.
+            Internal Terraform module library standardizing VPC, EKS, and RDS
+            setups across all teams. Enforces security baselines by default.
           </p>
           <div class="project-meta">
-            <span class="project-lang">Go</span>
-            <span>★ 7</span>
+            <span class="project-lang">HCL</span>
+            <span>★ 27</span>
           </div>
         </div>
 
         <div class="project-card">
           <div class="project-header">
-            <span class="project-icon">💡</span>
+            <span class="project-icon">📊</span>
             <div class="project-links">
               <a href="#" title="GitHub">GitHub</a>
               <a href="#" title="Live Demo">Live</a>
             </div>
           </div>
-          <h3 class="project-name">Project Delta</h3>
+          <h3 class="project-name">slo-dashboard</h3>
           <p class="project-desc">
-            Add your fourth project here. Focus on diversity of tech and problem
-            domains to show breadth.
+            Grafana dashboard framework for SLO/SLI tracking with error budget
+            burn rate alerts. One-command deploy for any service.
           </p>
           <div class="project-meta">
-            <span class="project-lang">Rust</span>
+            <span class="project-lang">Python</span>
             <span>★ 31</span>
           </div>
         </div>
@@ -217,34 +220,34 @@
 
         <a href="blog/post-template.html" class="blog-item">
           <div class="blog-info">
-            <p class="blog-title">How I Built This Website — From Design to GitHub Pages</p>
-            <p class="blog-excerpt">A walkthrough of the process, tools, and decisions behind this personal site.</p>
+            <p class="blog-title">SLOs That Actually Work: Moving Beyond 99.9% Uptime</p>
+            <p class="blog-excerpt">Why traditional uptime SLAs miss the point, and how to design SLOs your team will actually care about.</p>
           </div>
           <div class="blog-meta">
             <span class="blog-date">2024-01-15</span>
-            <span class="blog-tag">meta</span>
+            <span class="blog-tag">sre</span>
           </div>
         </a>
 
         <a href="blog/post-template.html" class="blog-item">
           <div class="blog-info">
-            <p class="blog-title">Write Your Second Article Title Here</p>
-            <p class="blog-excerpt">A short excerpt that gives readers a preview of what this post is about.</p>
+            <p class="blog-title">GitOps at Scale: Lessons from Running ArgoCD Across 50+ Clusters</p>
+            <p class="blog-excerpt">Patterns and pitfalls we discovered running GitOps in a large multi-tenant environment.</p>
           </div>
           <div class="blog-meta">
             <span class="blog-date">2024-01-01</span>
-            <span class="blog-tag">dev</span>
+            <span class="blog-tag">k8s</span>
           </div>
         </a>
 
         <a href="blog/post-template.html" class="blog-item">
           <div class="blog-info">
-            <p class="blog-title">Write Your Third Article Title Here</p>
-            <p class="blog-excerpt">Another great post about something technical or a lesson learned.</p>
+            <p class="blog-title">Write Your Next Article Title Here</p>
+            <p class="blog-excerpt">A short excerpt that gives readers a preview of what this post is about.</p>
           </div>
           <div class="blog-meta">
             <span class="blog-date">2023-12-20</span>
-            <span class="blog-tag">tips</span>
+            <span class="blog-tag">ops</span>
           </div>
         </a>
 
@@ -287,7 +290,7 @@
 
   <!-- ── Footer ── -->
   <footer>
-    <p>// Built with ♥ by Your Name &nbsp;·&nbsp; <a href="https://github.com/yourusername/personal-site" style="color:var(--accent-green); text-decoration:none;">Source</a></p>
+    <p>// Built with ♥ by Bob &nbsp;·&nbsp; <a href="https://github.com/yourusername/personal-site" style="color:var(--accent-green); text-decoration:none;">Source</a></p>
   </footer>
 
   <script src="script.js"></script>
