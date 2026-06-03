@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 修改下面三项 -->
+  <title>Article Title — Your Name</title>
+  <meta name="description" content="Article description for SEO.">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    .post-page { padding: 7rem 2rem 5rem; max-width: 700px; margin: 0 auto; }
+
+    .post-back {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 2.5rem;
+    }
+    .post-back:hover { color: var(--accent); }
+    .post-back::before { content: '← '; }
+
+    .post-tag {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 20px;
+      background: rgba(88,166,255,.1);
+      color: var(--accent);
+      border: 1px solid rgba(88,166,255,.2);
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .post-title {
+      font-size: clamp(1.5rem, 4vw, 2.25rem);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    .post-meta {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* Article body styles */
+    .post-body { line-height: 1.8; color: var(--text); }
+
+    .post-body h2 {
+      font-size: 1.35rem;
+      margin: 2.5rem 0 1rem;
+      color: var(--text);
+    }
+
+    .post-body h3 {
+      font-size: 1.1rem;
+      margin: 2rem 0 0.75rem;
+      color: var(--text);
+    }
+
+    .post-body p { margin-bottom: 1.25rem; color: var(--text-muted); }
+
+    .post-body a { color: var(--accent); }
+
+    .post-body code {
+      font-family: var(--font-mono);
+      font-size: 0.875em;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      padding: 0.1em 0.4em;
+      border-radius: 4px;
+      color: var(--accent-purple);
+    }
+
+    .post-body pre {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem;
+      overflow-x: auto;
+      margin: 1.5rem 0;
+    }
+
+    .post-body pre code {
+      background: none;
+      border: none;
+      padding: 0;
+      font-size: 0.875rem;
+      color: var(--text);
+    }
+
+    .post-body blockquote {
+      border-left: 3px solid var(--accent);
+      padding-left: 1.25rem;
+      margin: 1.5rem 0;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    .post-body ul, .post-body ol {
+      margin: 1rem 0 1.25rem 1.5rem;
+      color: var(--text-muted);
+    }
+
+    .post-body li { margin-bottom: 0.4rem; }
+
+    .post-body hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2.5rem 0;
+    }
+
+    .post-footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .post-nav a {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+    .post-nav a:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="../index.html" class="nav-logo">yourname.dev</a>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../blog/" style="color:var(--accent)">Blog</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <article class="post-page">
+    <a href="../blog/" class="post-back">Back to Blog</a>
+
+    <!-- 修改这里 -->
+    <span class="post-tag">meta</span>
+    <h1 class="post-title">Article Title Goes Here</h1>
+    <p class="post-meta">2024-01-15 &nbsp;·&nbsp; 5 min read</p>
+
+    <!-- 正文从这里开始写 -->
+    <div class="post-body">
+
+      <p>
+        This is the opening paragraph of your article. Hook the reader here.
+        Explain what you'll cover and why it matters.
+      </p>
+
+      <h2>Section One</h2>
+
+      <p>
+        Your content here. Use <code>inline code</code> for technical terms.
+      </p>
+
+      <pre><code>// Code block example
+function hello(name) {
+  return `Hello, ${name}!`
+}</code></pre>
+
+      <blockquote>
+        A quote or key insight worth highlighting.
+      </blockquote>
+
+      <h2>Section Two</h2>
+
+      <p>Keep writing...</p>
+
+      <ul>
+        <li>Bullet point one</li>
+        <li>Bullet point two</li>
+        <li>Bullet point three</li>
+      </ul>
+
+      <hr>
+
+      <p>
+        Closing thoughts. Summarize what was covered and what readers should take away.
+      </p>
+
+    </div>
+
+    <div class="post-footer">
+      <div class="post-nav">
+        <a href="#">← Previous Post</a>
+      </div>
+      <div class="post-nav">
+        <a href="#">Next Post →</a>
+      </div>
+    </div>
+  </article>
+
+  <footer>
+    <p>// Built with ♥ by Your Name</p>
+  </footer>
+</body>
+</html>

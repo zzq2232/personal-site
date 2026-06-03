@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Your Name</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    .blog-page { padding: 7rem 2rem 5rem; max-width: 700px; margin: 0 auto; }
+    .blog-page-title { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .blog-page-sub { color: var(--text-muted); font-family: var(--font-mono); font-size: 0.875rem; margin-bottom: 3rem; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="../index.html" class="nav-logo">yourname.dev</a>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../blog/" style="color:var(--accent)">Blog</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="blog-page">
+    <h1 class="blog-page-title">All Articles</h1>
+    <p class="blog-page-sub">// writing about code, systems, and ideas</p>
+
+    <div class="blog-list">
+
+      <!-- 复制这个 <a> 块来添加新文章 -->
+      <a href="post-template.html" class="blog-item">
+        <div class="blog-info">
+          <p class="blog-title">How I Built This Website — From Design to GitHub Pages</p>
+          <p class="blog-excerpt">A walkthrough of the process, tools, and decisions behind this personal site.</p>
+        </div>
+        <div class="blog-meta">
+          <span class="blog-date">2024-01-15</span>
+          <span class="blog-tag">meta</span>
+        </div>
+      </a>
+
+      <a href="post-template.html" class="blog-item">
+        <div class="blog-info">
+          <p class="blog-title">Your Second Article Title</p>
+          <p class="blog-excerpt">A short excerpt that gives readers a preview of what this post is about.</p>
+        </div>
+        <div class="blog-meta">
+          <span class="blog-date">2024-01-01</span>
+          <span class="blog-tag">dev</span>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>// Built with ♥ by Your Name</p>
+  </footer>
+</body>
+</html>

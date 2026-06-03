@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name — Developer</title>
+  <meta name="description" content="Personal website of Your Name, a software developer.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ── Nav ── -->
+  <nav>
+    <a href="#hero" class="nav-logo">yourname.dev</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">// Hello, world!</p>
+      <h1 class="hero-name">Your Name</h1>
+      <p class="hero-tagline">I build <span id="typed-text">things for the web</span><span class="cursor"></span></p>
+      <p class="hero-bio">
+        A software developer passionate about clean code and great user experiences.
+        I enjoy turning complex problems into simple, beautiful solutions.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── About ── -->
+  <section id="about">
+    <div class="container">
+      <p class="section-label">01. about_me</p>
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Hi! I'm Your Name, a software developer based in [City]. I love building
+            things and have been coding for X years. I specialize in [your specialization]
+            and enjoy working on both sides of the stack.
+          </p>
+          <p>
+            When I'm not in front of a computer screen, I'm usually [your hobbies].
+            I'm always open to new opportunities and interesting conversations.
+          </p>
+          <p>
+            Currently working at [Company] / Looking for new opportunities.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-value">X+</div>
+            <div class="stat-label">Years of Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">XX</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">XX</div>
+            <div class="stat-label">GitHub Stars</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">XX</div>
+            <div class="stat-label">Blog Articles</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Skills ── -->
+  <section id="skills">
+    <div class="container">
+      <p class="section-label">02. skills</p>
+      <h2 class="section-title">Tech Stack</h2>
+      <div class="skills-groups">
+        <div>
+          <p class="skill-group-name">// Languages</p>
+          <div class="skill-tags">
+            <span class="tag tag-blue">Python</span>
+            <span class="tag tag-blue">TypeScript</span>
+            <span class="tag tag-blue">Go</span>
+            <span class="tag tag-blue">Rust</span>
+            <span class="tag tag-blue">SQL</span>
+          </div>
+        </div>
+        <div>
+          <p class="skill-group-name">// Frameworks &amp; Libraries</p>
+          <div class="skill-tags">
+            <span class="tag tag-green">React</span>
+            <span class="tag tag-green">Next.js</span>
+            <span class="tag tag-green">Node.js</span>
+            <span class="tag tag-green">FastAPI</span>
+            <span class="tag tag-green">Docker</span>
+          </div>
+        </div>
+        <div>
+          <p class="skill-group-name">// Tools &amp; Platforms</p>
+          <div class="skill-tags">
+            <span class="tag tag-purple">Git</span>
+            <span class="tag tag-purple">Linux</span>
+            <span class="tag tag-purple">AWS</span>
+            <span class="tag tag-purple">PostgreSQL</span>
+            <span class="tag tag-purple">Redis</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Projects ── -->
+  <section id="projects">
+    <div class="container">
+      <p class="section-label">03. projects</p>
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">📦</span>
+            <div class="project-links">
+              <a href="#" title="GitHub">GitHub</a>
+              <a href="#" title="Live Demo">Live</a>
+            </div>
+          </div>
+          <h3 class="project-name">Project Alpha</h3>
+          <p class="project-desc">
+            A brief description of what this project does and the problem it solves.
+            Keep it concise but informative.
+          </p>
+          <div class="project-meta">
+            <span class="project-lang">TypeScript</span>
+            <span>★ 42</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🚀</span>
+            <div class="project-links">
+              <a href="#" title="GitHub">GitHub</a>
+              <a href="#" title="Live Demo">Live</a>
+            </div>
+          </div>
+          <h3 class="project-name">Project Beta</h3>
+          <p class="project-desc">
+            Another cool project description. Highlight the tech used and the
+            impact or scale of the project.
+          </p>
+          <div class="project-meta">
+            <span class="project-lang">Python</span>
+            <span>★ 18</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🔧</span>
+            <div class="project-links">
+              <a href="#" title="GitHub">GitHub</a>
+            </div>
+          </div>
+          <h3 class="project-name">Project Gamma</h3>
+          <p class="project-desc">
+            A CLI tool / library / open source contribution that does something
+            useful for developers.
+          </p>
+          <div class="project-meta">
+            <span class="project-lang">Go</span>
+            <span>★ 7</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">💡</span>
+            <div class="project-links">
+              <a href="#" title="GitHub">GitHub</a>
+              <a href="#" title="Live Demo">Live</a>
+            </div>
+          </div>
+          <h3 class="project-name">Project Delta</h3>
+          <p class="project-desc">
+            Add your fourth project here. Focus on diversity of tech and problem
+            domains to show breadth.
+          </p>
+          <div class="project-meta">
+            <span class="project-lang">Rust</span>
+            <span>★ 31</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Blog ── -->
+  <section id="blog">
+    <div class="container">
+      <p class="section-label">04. blog</p>
+      <h2 class="section-title">Recent Articles</h2>
+      <div class="blog-list">
+
+        <a href="blog/post-template.html" class="blog-item">
+          <div class="blog-info">
+            <p class="blog-title">How I Built This Website — From Design to GitHub Pages</p>
+            <p class="blog-excerpt">A walkthrough of the process, tools, and decisions behind this personal site.</p>
+          </div>
+          <div class="blog-meta">
+            <span class="blog-date">2024-01-15</span>
+            <span class="blog-tag">meta</span>
+          </div>
+        </a>
+
+        <a href="blog/post-template.html" class="blog-item">
+          <div class="blog-info">
+            <p class="blog-title">Write Your Second Article Title Here</p>
+            <p class="blog-excerpt">A short excerpt that gives readers a preview of what this post is about.</p>
+          </div>
+          <div class="blog-meta">
+            <span class="blog-date">2024-01-01</span>
+            <span class="blog-tag">dev</span>
+          </div>
+        </a>
+
+        <a href="blog/post-template.html" class="blog-item">
+          <div class="blog-info">
+            <p class="blog-title">Write Your Third Article Title Here</p>
+            <p class="blog-excerpt">Another great post about something technical or a lesson learned.</p>
+          </div>
+          <div class="blog-meta">
+            <span class="blog-date">2023-12-20</span>
+            <span class="blog-tag">tips</span>
+          </div>
+        </a>
+
+      </div>
+      <a href="blog/" class="view-all">All articles</a>
+    </div>
+  </section>
+
+  <!-- ── Contact ── -->
+  <section id="contact">
+    <div class="container">
+      <p class="section-label">05. contact</p>
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-inner">
+        <p class="contact-desc">
+          I'm currently open to new opportunities. Whether you have a question,
+          a project idea, or just want to say hi — my inbox is always open!
+        </p>
+        <div class="contact-links">
+          <a href="mailto:your@email.com" class="contact-link">
+            <span class="contact-link-icon">@</span>
+            your@email.com
+          </a>
+          <a href="https://github.com/yourusername" target="_blank" class="contact-link">
+            <span class="contact-link-icon">gh</span>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/yourusername" target="_blank" class="contact-link">
+            <span class="contact-link-icon">in</span>
+            LinkedIn
+          </a>
+          <a href="https://twitter.com/yourusername" target="_blank" class="contact-link">
+            <span class="contact-link-icon">tw</span>
+            Twitter / X
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <p>// Built with ♥ by Your Name &nbsp;·&nbsp; <a href="https://github.com/yourusername/personal-site" style="color:var(--accent-green); text-decoration:none;">Source</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
