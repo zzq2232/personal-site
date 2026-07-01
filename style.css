@@ -512,6 +512,38 @@ section {
   color: var(--text-muted);
 }
 
+.project-badge {
+  font-size: 0.65rem;
+  font-family: var(--font-mono);
+  color: var(--accent-green);
+  border: 1px solid rgba(63,185,80,.4);
+  background: rgba(63,185,80,.08);
+  border-radius: 20px;
+  padding: 0.1rem 0.5rem;
+  vertical-align: middle;
+  margin-left: 0.4rem;
+}
+
+.project-outcomes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.outcome {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  border: 1px solid;
+}
+
+.outcome--green  { color: var(--accent-green);  border-color: rgba(63,185,80,.4);  background: rgba(63,185,80,.1);  }
+.outcome--blue   { color: var(--accent);         border-color: rgba(88,166,255,.4); background: rgba(88,166,255,.1); }
+.outcome--purple { color: var(--accent-purple);  border-color: rgba(188,140,255,.4);background: rgba(188,140,255,.1);}
+
 .project-lang::before {
   content: '●  ';
   color: var(--accent-green);

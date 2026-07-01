@@ -20,7 +20,6 @@
       <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#blog">Blog</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -262,13 +261,18 @@
               <a href="https://coupon.rakuten.co.jp/" target="_blank" title="Live">Live</a>
             </div>
           </div>
-          <h3 class="project-name">Rakuten Coupon Portal Migration</h3>
+          <h3 class="project-name">Rakuten Coupon Portal Migration <span class="project-badge">✓ shipped</span></h3>
           <p class="project-desc">
             Migrated the Coupon Portal from legacy Docker to Kubernetes — split monolith into
             independent frontend/backend workloads, configured HPA autoscaling and BCP multi-region
             pod distribution. Zero-downtime cutover via Istio VirtualService canary strategy with
             cookie-based traffic splitting and instant rollback at each stage.
           </p>
+          <div class="project-outcomes">
+            <span class="outcome outcome--green">0 downtime</span>
+            <span class="outcome outcome--blue">2× perf</span>
+            <span class="outcome outcome--purple">-30% cost</span>
+          </div>
           <div class="project-meta">
             <span class="project-lang">Kubernetes</span>
             <span class="project-lang">Istio</span>
@@ -337,55 +341,10 @@
     </div>
   </section>
 
-  <!-- ── Blog ── -->
-  <section id="blog">
-    <div class="container">
-      <p class="section-label">05. blog</p>
-      <h2 class="section-title">Recent Articles</h2>
-      <div class="blog-list">
-
-        <a href="blog/post-template.html" class="blog-item">
-          <div class="blog-info">
-            <p class="blog-title">SLOs That Actually Work: Moving Beyond 99.9% Uptime</p>
-            <p class="blog-excerpt">Why traditional uptime SLAs miss the point, and how to design SLOs your team will actually care about.</p>
-          </div>
-          <div class="blog-meta">
-            <span class="blog-date">2024-01-15</span>
-            <span class="blog-tag">sre</span>
-          </div>
-        </a>
-
-        <a href="blog/post-template.html" class="blog-item">
-          <div class="blog-info">
-            <p class="blog-title">GitOps at Scale: Lessons from Running ArgoCD Across 50+ Clusters</p>
-            <p class="blog-excerpt">Patterns and pitfalls we discovered running GitOps in a large multi-tenant environment.</p>
-          </div>
-          <div class="blog-meta">
-            <span class="blog-date">2024-01-01</span>
-            <span class="blog-tag">k8s</span>
-          </div>
-        </a>
-
-        <a href="blog/post-template.html" class="blog-item">
-          <div class="blog-info">
-            <p class="blog-title">Write Your Next Article Title Here</p>
-            <p class="blog-excerpt">A short excerpt that gives readers a preview of what this post is about.</p>
-          </div>
-          <div class="blog-meta">
-            <span class="blog-date">2023-12-20</span>
-            <span class="blog-tag">ops</span>
-          </div>
-        </a>
-
-      </div>
-      <a href="blog/" class="view-all">All articles</a>
-    </div>
-  </section>
-
   <!-- ── Contact ── -->
   <section id="contact">
     <div class="container">
-      <p class="section-label">06. contact</p>
+      <p class="section-label">05. contact</p>
       <h2 class="section-title">Get In Touch</h2>
       <div class="contact-inner">
         <p class="contact-desc">
