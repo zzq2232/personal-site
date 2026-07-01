@@ -265,11 +265,12 @@
           <p class="project-desc">
             Migrated the Coupon Portal from legacy Docker to Kubernetes — split monolith into
             independent frontend/backend workloads, configured HPA autoscaling and BCP multi-region
-            pod distribution. Zero-downtime cutover via Istio VirtualService canary strategy with
-            cookie-based traffic splitting and instant rollback at each stage.
+            pod distribution with L4 resiliency. Zero-downtime cutover via Istio VirtualService canary
+            strategy with cookie-based traffic splitting and instant rollback at each stage.
           </p>
           <div class="project-outcomes">
             <span class="outcome outcome--green">0 downtime</span>
+            <span class="outcome outcome--green">L4 resiliency</span>
             <span class="outcome outcome--blue">2× perf</span>
             <span class="outcome outcome--purple">-30% cost</span>
           </div>
