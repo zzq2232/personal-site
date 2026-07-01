@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bob — DevOps Tech Lead @ Rakuten</title>
-  <meta name="description" content="Bob — DevOps Tech Lead at Rakuten. Platform engineering, Kubernetes, observability, CI/CD.">
+  <title>Bob — SRE Tech Lead @ Rakuten</title>
+  <meta name="description" content="Bob (Zhang Zhongqi) — SRE Tech Lead at Rakuten Tokyo. Kubernetes, GCP, CI/CD platform engineering, observability.">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -16,6 +16,7 @@
     <a href="https://zzq2232.github.io/personal-site/" class="nav-logo">zzq2232.github.io</a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#blog">Blog</a></li>
@@ -30,9 +31,9 @@
       <h1 class="hero-name">Bob</h1>
       <p class="hero-tagline">I build <span id="typed-text">reliable platforms.</span><span class="cursor"></span></p>
       <p class="hero-bio">
-        DevOps Tech Lead at Rakuten, Tokyo. I build the platforms and pipelines
-        that keep services running at scale — from zero-downtime cloud migrations
-        to end-to-end observability stacks.
+        SRE Tech Lead at Rakuten, Tokyo. I build the platforms and pipelines
+        that keep services running at scale — zero-downtime Kubernetes migrations,
+        ~30K QPS traffic, Internal Developer Platforms, and end-to-end observability.
       </p>
       <div class="hero-cta">
         <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -49,38 +50,122 @@
       <div class="about-grid">
         <div class="about-text">
           <p>
-            Hi! I'm Bob, a DevOps Tech Lead at Rakuten, based in Tokyo, Japan.
-            Over the past ~4 years I've grown from intern to tech lead,
-            working on cloud migrations, CI/CD pipelines, and full-stack
-            observability for production services handling 20k+ QPS.
+            Hi! I'm Bob (Zhang Zhongqi), an SRE Tech Lead at Rakuten, based in Tokyo, Japan.
+            Over 3.8 years I've grown from intern to tech lead, leading cloud-native
+            migrations, CI/CD platform engineering, and full-stack observability for
+            production services handling ~30K QPS peak traffic.
           </p>
           <p>
             I'm passionate about making infrastructure invisible to developers —
-            through reliable platforms, automated deployments, and observability
+            through Internal Developer Platforms, automated pipelines, and observability
             that surfaces problems before users notice them.
           </p>
           <p>
-            Currently leading a platform engineering transformation at Rakuten.
+            Trilingual (Mandarin / English / Japanese), transferred to Tokyo HQ in Nov 2025.
           </p>
         </div>
         <div class="about-stats">
-          <div class="stat-card">
-            <div class="stat-value">3+</div>
-            <div class="stat-label">Years at Rakuten</div>
+          <div class="stat-card stat-card--timer">
+            <div class="stat-label stat-label--top">// Time at Rakuten</div>
+            <div class="tenure-timer" id="tenure-timer">
+              <div class="tenure-unit">
+                <span class="tenure-val" id="t-years">--</span>
+                <span class="tenure-key">yrs</span>
+              </div>
+              <span class="tenure-sep">:</span>
+              <div class="tenure-unit">
+                <span class="tenure-val" id="t-days">---</span>
+                <span class="tenure-key">days</span>
+              </div>
+              <span class="tenure-sep">:</span>
+              <div class="tenure-unit">
+                <span class="tenure-val" id="t-hours">--</span>
+                <span class="tenure-key">hrs</span>
+              </div>
+              <span class="tenure-sep">:</span>
+              <div class="tenure-unit">
+                <span class="tenure-val" id="t-mins">--</span>
+                <span class="tenure-key">min</span>
+              </div>
+              <span class="tenure-sep">:</span>
+              <div class="tenure-unit">
+                <span class="tenure-val" id="t-secs">--</span>
+                <span class="tenure-key">sec</span>
+              </div>
+            </div>
+            <div class="tenure-since">since 2022-11-23</div>
           </div>
           <div class="stat-card">
-            <div class="stat-value">20k</div>
+            <div class="stat-value">~30K</div>
             <div class="stat-label">Peak QPS Handled</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">30+</div>
+            <div class="stat-label">Apps Migrated to CI/CD</div>
           </div>
           <div class="stat-card">
             <div class="stat-value">0</div>
             <div class="stat-label">Downtime on Migration</div>
           </div>
-          <div class="stat-card">
-            <div class="stat-value">XX</div>
-            <div class="stat-label">Blog Articles</div>
-          </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Experience ── -->
+  <section id="experience">
+    <div class="container">
+      <p class="section-label">02. experience</p>
+      <h2 class="section-title">Experience</h2>
+      <div class="experience-list">
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-role">SRE / SRE Tech Lead</h3>
+              <p class="exp-company">Rakuten &mdash; Dalian, China &amp; Tokyo, Japan</p>
+            </div>
+            <span class="exp-date">2022/11 &ndash; Present</span>
+          </div>
+          <p class="exp-note">Internship: 2022/11&ndash;2023/6 &nbsp;·&nbsp; Regular Employee: 2023/7&ndash;Present &nbsp;·&nbsp; Transferred to Tokyo: 2025/11</p>
+          <ul class="exp-bullets">
+            <li>Led zero-downtime migration of multiple critical services to Kubernetes with Istio canary strategy, supporting ~30,000 QPS peak during Sales Events.</li>
+            <li>Built end-to-end CI/CD pipelines using Jenkins &amp; GitHub Actions, migrating 30+ apps from bare-metal to cloud-native. Designed reusable workflows with Workload Identity Federation (OIDC) for keyless GCP auth and Docker layer caching.</li>
+            <li>Designed and provisioned GCP infrastructure via Terraform (IaC): Cloud Run, Cloud SQL (PostgreSQL), Artifact Registry, Cloud Storage, Cloud Armor, Cloud NAT, Secret Manager across multiple environments.</li>
+            <li>Deployed observability stack (Prometheus + Grafana, EFK + ElastAlert2 + PagerDuty) enabling automated incident detection. Managed Ansible-based IaC for logging cluster configuration.</li>
+            <li>Built and deployed an Internal Developer Platform (IDP) serving ~60 people in Dept. Convenience, reducing operational toil and delivery lead time.</li>
+            <li>Leveraged AI-assisted workflows (Claude Code with custom agent skills) for automated PR reviews, Confluence doc generation, Terraform guidance, and architecture standard enforcement.</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-role">Technical Support Engineer (Internship)</h3>
+              <p class="exp-company">NetApp &mdash; Dalian, China</p>
+            </div>
+            <span class="exp-date">2022/07 &ndash; 2022/11</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Built a case tracking system with Power Apps &amp; Power Automate, reducing average handling time by 20%.</li>
+            <li>Provided technical support to Japanese clients; completed enterprise data storage management and security training.</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-role">B.A. Software Engineering</h3>
+              <p class="exp-company">Dalian University of Foreign Languages &mdash; China</p>
+            </div>
+            <span class="exp-date">2019/09 &ndash; 2023/07</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Top 10% of major, average score 90/100, multiple university scholarships.</li>
+            <li>Trilingual: Mandarin (native), English (fluent), Japanese (advanced).</li>
+          </ul>
+        </div>
+
       </div>
     </div>
   </section>
@@ -88,37 +173,74 @@
   <!-- ── Skills ── -->
   <section id="skills">
     <div class="container">
-      <p class="section-label">02. skills</p>
+      <p class="section-label">03. skills</p>
       <h2 class="section-title">Tech Stack</h2>
       <div class="skills-groups">
         <div>
-          <p class="skill-group-name">// Infrastructure &amp; Container</p>
+          <p class="skill-group-name">// Infrastructure &amp; Orchestration</p>
           <div class="skill-tags">
             <span class="tag tag-blue">Kubernetes</span>
+            <span class="tag tag-blue">Istio</span>
             <span class="tag tag-blue">Docker</span>
             <span class="tag tag-blue">Helm</span>
-            <span class="tag tag-blue">MariaDB</span>
+            <span class="tag tag-blue">Terraform</span>
+            <span class="tag tag-blue">Ansible</span>
             <span class="tag tag-blue">Linux</span>
           </div>
         </div>
         <div>
-          <p class="skill-group-name">// Observability</p>
+          <p class="skill-group-name">// Cloud Platforms (GCP)</p>
           <div class="skill-tags">
-            <span class="tag tag-green">Prometheus</span>
-            <span class="tag tag-green">Grafana</span>
-            <span class="tag tag-green">Elasticsearch</span>
-            <span class="tag tag-green">Fluentd</span>
-            <span class="tag tag-green">Kibana</span>
+            <span class="tag tag-blue">Cloud Run</span>
+            <span class="tag tag-blue">Cloud SQL</span>
+            <span class="tag tag-blue">Artifact Registry</span>
+            <span class="tag tag-blue">Cloud Storage</span>
+            <span class="tag tag-blue">Cloud Armor</span>
+            <span class="tag tag-blue">Secret Manager</span>
+            <span class="tag tag-blue">Workload Identity Federation</span>
+            <span class="tag tag-blue">Cloud NAT</span>
           </div>
         </div>
         <div>
-          <p class="skill-group-name">// CI/CD &amp; IaC</p>
+          <p class="skill-group-name">// CI/CD &amp; GitOps</p>
           <div class="skill-tags">
+            <span class="tag tag-purple">GitHub Actions</span>
             <span class="tag tag-purple">Jenkins</span>
-            <span class="tag tag-purple">Ansible</span>
+            <span class="tag tag-purple">ArgoCD</span>
             <span class="tag tag-purple">GitOps</span>
-            <span class="tag tag-purple">Python</span>
-            <span class="tag tag-purple">Bash</span>
+          </div>
+        </div>
+        <div>
+          <p class="skill-group-name">// Observability &amp; Alerting</p>
+          <div class="skill-tags">
+            <span class="tag tag-green">Prometheus</span>
+            <span class="tag tag-green">Grafana</span>
+            <span class="tag tag-green">Fluentd</span>
+            <span class="tag tag-green">Elasticsearch</span>
+            <span class="tag tag-green">Kibana</span>
+            <span class="tag tag-green">ElastAlert2</span>
+            <span class="tag tag-green">PagerDuty</span>
+          </div>
+        </div>
+        <div>
+          <p class="skill-group-name">// Networking &amp; Security</p>
+          <div class="skill-tags">
+            <span class="tag tag-purple">TCP/IP</span>
+            <span class="tag tag-purple">DNS</span>
+            <span class="tag tag-purple">Load Balancing</span>
+            <span class="tag tag-purple">VPC</span>
+            <span class="tag tag-purple">IAM</span>
+            <span class="tag tag-purple">TLS/mTLS</span>
+            <span class="tag tag-purple">OIDC / Zero-Trust</span>
+          </div>
+        </div>
+        <div>
+          <p class="skill-group-name">// Platform Engineering &amp; IDP</p>
+          <div class="skill-tags">
+            <span class="tag tag-green">Internal Developer Platform</span>
+            <span class="tag tag-green">AI-assisted Workflows</span>
+            <span class="tag tag-green">Documentation Automation</span>
+            <span class="tag tag-green">Cloud Cost Optimization</span>
           </div>
         </div>
       </div>
@@ -128,60 +250,28 @@
   <!-- ── Projects ── -->
   <section id="projects">
     <div class="container">
-      <p class="section-label">03. projects</p>
+      <p class="section-label">04. projects</p>
       <h2 class="section-title">Featured Projects</h2>
       <div class="projects-grid">
 
         <div class="project-card">
           <div class="project-header">
-            <span class="project-icon">📦</span>
+            <span class="project-icon">🛒</span>
             <div class="project-links">
-              <a href="#" title="GitHub">GitHub</a>
-              <a href="#" title="Live Demo">Live</a>
+              <a href="https://coupon.rakuten.co.jp/" target="_blank" title="Live">Live</a>
             </div>
           </div>
-          <h3 class="project-name">Cloud Migration @ Rakuten</h3>
+          <h3 class="project-name">Rakuten Coupon Portal Migration</h3>
           <p class="project-desc">
-            Led migration of services to Kubernetes in the cloud with zero downtime,
-            supporting peak QPS of 20,000. Used canary releases and end-to-end
-            Jenkins pipelines across multi-environment deployments.
+            Migrated the Coupon Portal from legacy Docker to Kubernetes — split monolith into
+            independent frontend/backend workloads, configured HPA autoscaling and BCP multi-region
+            pod distribution. Zero-downtime cutover via Istio VirtualService canary strategy with
+            cookie-based traffic splitting and instant rollback at each stage.
           </p>
           <div class="project-meta">
             <span class="project-lang">Kubernetes</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <span class="project-icon">📊</span>
-            <div class="project-links">
-            </div>
-          </div>
-          <h3 class="project-name">Full-Stack Observability</h3>
-          <p class="project-desc">
-            Built and administered ELK/EFK clusters for log monitoring and
-            Prometheus + Grafana for metrics. Configured custom alerts to
-            enhance observability and optimize system performance.
-          </p>
-          <div class="project-meta">
-            <span class="project-lang">Prometheus</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <span class="project-icon">🏗️</span>
-            <div class="project-links">
-            </div>
-          </div>
-          <h3 class="project-name">Multi-Env Infrastructure Design</h3>
-          <p class="project-desc">
-            Designed isolated multi-environment infra using Kubernetes, Docker,
-            Jenkins, Prometheus, EFK, and MariaDB. Managed full lifecycle from
-            planning to production.
-          </p>
-          <div class="project-meta">
-            <span class="project-lang">Ansible</span>
+            <span class="project-lang">Istio</span>
+            <span class="project-lang">JMeter</span>
           </div>
         </div>
 
@@ -191,14 +281,54 @@
             <div class="project-links">
             </div>
           </div>
-          <h3 class="project-name">Platform Engineering Transformation</h3>
+          <h3 class="project-name">FDP — Front Distribution Platform</h3>
           <p class="project-desc">
-            Currently leading a platform engineering transformation at Rakuten
-            as DevOps Tech Lead — standardizing tooling, improving developer
-            experience, and driving reliability practices org-wide.
+            Designed and built end-to-end self-service pipeline: Bitbucket &rarr; Jenkins &rarr; STaaS (S3)
+            &rarr; NGINX on Kubernetes &rarr; CDN. Jira-driven production approval workflow lets operators
+            deploy and rollback via Build Tag ID — no kubectl or shell access required.
+            Supports multi-STG / Pre-PROD / PROD with planned/scheduled delivery and diff-before-promote.
+          </p>
+          <div class="project-meta">
+            <span class="project-lang">Jenkins</span>
+            <span class="project-lang">Kubernetes</span>
+            <span class="project-lang">NGINX</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🏗️</span>
+            <div class="project-links">
+            </div>
+          </div>
+          <h3 class="project-name">GCP Cloud-Native Infrastructure (IaC)</h3>
+          <p class="project-desc">
+            Designed and provisioned GCP infrastructure via Terraform across multiple environments:
+            Cloud Run, Cloud SQL (PostgreSQL), Artifact Registry, Cloud Storage, Cloud Armor, Cloud NAT,
+            Secret Manager, Memorystore — with GCS remote state backends and full environment promotion.
+          </p>
+          <div class="project-meta">
+            <span class="project-lang">Terraform</span>
+            <span class="project-lang">GCP</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🧰</span>
+            <div class="project-links">
+            </div>
+          </div>
+          <h3 class="project-name">Internal Developer Platform (IDP)</h3>
+          <p class="project-desc">
+            Built and deployed an IDP serving ~60 engineers in Dept. Convenience, eliminating manual
+            processes and reducing delivery lead time and onboarding cost across multiple teams.
+            Integrated AI-assisted workflows (Claude Code) for automated PR reviews, Confluence doc
+            generation, Terraform guidance, and architecture standard enforcement.
           </p>
           <div class="project-meta">
             <span class="project-lang">Platform Eng</span>
+            <span class="project-lang">AI Workflows</span>
           </div>
         </div>
 
@@ -209,7 +339,7 @@
   <!-- ── Blog ── -->
   <section id="blog">
     <div class="container">
-      <p class="section-label">04. blog</p>
+      <p class="section-label">05. blog</p>
       <h2 class="section-title">Recent Articles</h2>
       <div class="blog-list">
 
@@ -254,7 +384,7 @@
   <!-- ── Contact ── -->
   <section id="contact">
     <div class="container">
-      <p class="section-label">05. contact</p>
+      <p class="section-label">06. contact</p>
       <h2 class="section-title">Get In Touch</h2>
       <div class="contact-inner">
         <p class="contact-desc">

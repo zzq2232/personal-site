@@ -40,6 +40,43 @@ function type() {
 
 type()
 
+// ── Rakuten tenure live timer ──────────────────────────────────────────────
+;(function () {
+  // 2022-11-23 09:00:00 JST (UTC+9)
+  const START = new Date('2022-11-23T09:00:00+09:00').getTime()
+
+  const els = {
+    years: document.getElementById('t-years'),
+    days:  document.getElementById('t-days'),
+    hours: document.getElementById('t-hours'),
+    mins:  document.getElementById('t-mins'),
+    secs:  document.getElementById('t-secs'),
+  }
+
+  function pad(n, w) { return String(n).padStart(w, '0') }
+
+  function tick() {
+    const diff = Math.floor((Date.now() - START) / 1000)
+
+    const years = Math.floor(diff / (365.25 * 24 * 3600))
+    const rem1  = diff - Math.floor(years * 365.25 * 24 * 3600)
+    const days  = Math.floor(rem1 / (24 * 3600))
+    const rem2  = rem1 % (24 * 3600)
+    const hours = Math.floor(rem2 / 3600)
+    const mins  = Math.floor((rem2 % 3600) / 60)
+    const secs  = rem2 % 60
+
+    els.years.textContent = years
+    els.days.textContent  = pad(days, 3)
+    els.hours.textContent = pad(hours, 2)
+    els.mins.textContent  = pad(mins, 2)
+    els.secs.textContent  = pad(secs, 2)
+  }
+
+  tick()
+  setInterval(tick, 1000)
+})()
+
 // ── Highlight active nav link on scroll ───────────────────────────────────
 const sections = document.querySelectorAll('section[id]')
 const navLinks = document.querySelectorAll('.nav-links a')

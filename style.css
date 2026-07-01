@@ -229,6 +229,181 @@ section {
   margin-top: 0.25rem;
 }
 
+/* ── Experience ── */
+#experience {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.exp-item {
+  border-left: 2px solid var(--border);
+  padding-left: 1.5rem;
+  position: relative;
+  transition: border-color 0.2s;
+}
+
+.exp-item:hover { border-color: var(--accent); }
+
+.exp-item::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 0.4rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-green);
+  border: 2px solid var(--bg-secondary);
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.3rem;
+  flex-wrap: wrap;
+}
+
+.exp-role {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+
+.exp-company {
+  font-size: 0.875rem;
+  color: var(--accent);
+  font-family: var(--font-mono);
+}
+
+.exp-date {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  padding-top: 0.15rem;
+}
+
+.exp-note {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  margin-bottom: 0.75rem;
+}
+
+.exp-bullets {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.exp-bullets li {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.exp-bullets li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--accent-green);
+  font-size: 0.7rem;
+  top: 0.25rem;
+}
+
+/* ── Tenure timer ── */
+.stat-card--timer {
+  grid-column: span 2;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card--timer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(88,166,255,.05) 0%, rgba(63,185,80,.05) 100%);
+  pointer-events: none;
+}
+
+.stat-label--top {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--accent-green);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+}
+
+.tenure-timer {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.tenure-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 2ch;
+}
+
+.tenure-val {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  transition: color 0.1s;
+}
+
+.tenure-key {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--text-muted);
+  margin-top: 0.2rem;
+  letter-spacing: 0.05em;
+}
+
+.tenure-sep {
+  font-family: var(--font-mono);
+  font-size: 1.25rem;
+  color: var(--border);
+  line-height: 1;
+  margin-bottom: 0.6rem;
+}
+
+.tenure-since {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  letter-spacing: 0.05em;
+}
+
+/* pulse the seconds digit */
+#t-secs {
+  color: var(--accent-green);
+}
+
 /* ── Skills ── */
 #skills {
   background: var(--bg-secondary);
